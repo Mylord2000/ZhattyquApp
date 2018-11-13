@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CompletedTasks"
+
+    android:background="@drawable/gradient_background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/motiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="casual"
+        android:textColor="#FF7700"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="21dp"
+        android:text="Completed Tasks"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/completedTasksRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
+
+    </FrameLayout>

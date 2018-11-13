@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TasksForToday"
+    android:background="@drawable/gradient_background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/motivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="casual"
+            android:textColor="#FF7700"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="21dp"
+            android:text="Yesterday you said tomorow, stop giving up!"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_marginBottom="40dp"
+        android:id="@+id/tasksRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addMyTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF7700"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Добавить задание" />
+
+
+
+</FrameLayout>
